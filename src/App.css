@@ -1,7 +1,12 @@
 @import "tailwindcss";
-* {
-  background-color: #;
-}
+
 body {
-  background-image: url(App.css);
+  width: full;
+  height: full;
+  background: url("./assets/image/background.png") center / cover no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  margin: 0;
 }
