@@ -1,13 +1,14 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), tailwindcss()],
   server: {
-    host: true, // اجازه میده با آی‌پی به پروژه دسترسی داشته باشی
-    port: 1282, // میتونی پورتی که میخوای مشخص کنی
+    host: true,
+    port: 1282,
   },
   build: {
-    outDir: "build", // فولدر خروجی برای انتشار
+    outDir: "build",
   },
 });
