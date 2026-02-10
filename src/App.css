@@ -1,1 +1,7 @@
 @import "tailwindcss";
+* {
+  background-color: #;
+}
+body {
+  background-image: url(App.css);
+}
