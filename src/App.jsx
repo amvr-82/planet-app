@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "./components/header/Header";
+import Home from "./Home/Home";
 
 function App() {
   return (
-    <div className="back-home">
-      <Header />
+    <div className="back-img">
+      <Home></Home>
     </div>
   );
 }

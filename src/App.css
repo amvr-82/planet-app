@@ -1,12 +1,9 @@
 @import "tailwindcss";
 
-body {
-  width: full;
-  height: full;
-  background: url("./assets/image/background.png") center / cover no-repeat;
+.back-img {
+  width: 100%;
+  height: 1000px;
+  background: url("./assets/image/background.png");
   background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
   background-attachment: scroll;
-  margin: 0;
 }
