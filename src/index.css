@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "linter";
+  src: url("./assets/font/linter.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
