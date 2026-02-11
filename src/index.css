@@ -7,10 +7,45 @@
   font-style: normal;
 }
 
-.card {
+/* .card {
   width: 300px;
   height: 420px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 77px;
-  clip-path: path("M 0 0 L 77 0 Q 150 30 235 0 L 300 0 L 300 420 L 0 420 Z");
+  background: rgba(255, 255, 255, 0.05);
+
+  border: 2px solid;
+  border-image: linear-gradient(90deg, #ff00cc, #3333ff, #00ffcc) 1;
+  border-radius: 60px;
+
+  backdrop-filter: blur(25px) saturate(120%) brightness(1.2);
+
+  clip-path: path("M 0 0 L 60 0 Q 150 20 230 0 L 300 0 L 300 420 L 0 420 Z");
+} */
+.card {
+  position: relative;
+  width: 300px;
+  height: 420px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 60px;
+  backdrop-filter: blur(25px) saturate(120%) brightness(1.2);
+  clip-path: path("M 0 0 L 60 0 Q 150 20 230 0 L 300 0 L 300 420 L 0 420 Z");
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px; /* ضخامت بوردر */
+  background: linear-gradient(
+    110deg,
+    rgba(135, 135, 135, 0.195),
+    rgba(255, 0, 0, 0),
+    rgba(152, 152, 152, 0.2)
+  );
+  clip-path: inherit;
+  border-radius: 60px;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
 }
