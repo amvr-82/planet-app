@@ -1,13 +1,13 @@
 import Header from "../components/header/Header";
-import CardHero from "../components/component/CardHero";
+import Herosection from "../components/component/herosection/Herosection";
 
 export default function Home() {
   return (
-    <div className="pt-80">
+    <div className="pt-100">
       <div>
         <Header />
         <div className=" absolute right-0">
-          <CardHero />
+          <Herosection />
         </div>
       </div>
     </div>
