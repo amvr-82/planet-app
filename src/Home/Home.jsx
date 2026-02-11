@@ -1,5 +1,5 @@
 import Header from "../components/header/Header";
-import CardHsero from "../components/component/CardHero";
+import CardHero from "../components/component/CardHero";
 
 export default function Home() {
   return (
