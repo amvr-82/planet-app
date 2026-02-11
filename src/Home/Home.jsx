@@ -1,5 +1,5 @@
 import Header from "../components/header/Header";
-import Card from "../components/component/card";
+import CardHsero from "../components/component/CardHero";
 
 export default function Home() {
   return (
@@ -7,7 +7,7 @@ export default function Home() {
       <div>
         <Header />
         <div className=" absolute right-0">
-          <Card />
+          <CardHero />
         </div>
       </div>
     </div>
