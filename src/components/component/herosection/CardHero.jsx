@@ -4,7 +4,7 @@ function CardHero() {
   return (
     <div className=" relative w-125 h-125 flex items-center justify-center">
       {/* عکس گل*/}
-      <div className="absolute left-1/2 -top-3 -translate-x-1/2 z-60 pointer-events-none">
+      <div className="absolute left-1/2 -top-10 -translate-x-1/2 z-60 pointer-events-none">
         <img
           className="scale-110"
           src="./assets/image/plant1.png"
