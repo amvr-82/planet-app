@@ -1,5 +1,5 @@
 import React from "react";
-import CardHero from "../CardHero";
+import CardHero from "./CardHero";
 
 function Herosection() {
   return (

@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <div className="fixed items-center top-0 w-full h-20 z-50">
+    <div className="fixed items-center top-0 w-full h-20 z-999">
       {/* خود هدر*/}
       <div className="absolute inset-0 flex items-center  align-middle  px-6 z-10">
         {/* دیو لوگوعه */}

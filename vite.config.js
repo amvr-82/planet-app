@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
     host: true,
-    port: 1282,
+    port: 3000,
   },
   build: {
     outDir: "build",
