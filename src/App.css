@@ -1,8 +1,11 @@
 @import "tailwindcss";
 .back-img {
   width: 100%;
-  height: 1000px;
-  background: url("/assets/image/background.png");
+  height: 3000px;
+  background: url("/assets/image/background.png") no-repeat;
+  background-size: cover; /* 🐘 این تضمین می‌کنه همیشه پر میشه */
+
   background-position: top;
   background-attachment: scroll;
+  margin-top: -150px;
 }
