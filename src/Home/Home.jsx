@@ -3,9 +3,8 @@ import Herosection from "../components/component/herosection/Herosection";
 
 export default function Home() {
   return (
-    <div className="pt-100">
+    <div>
       <Header />
-
       <Herosection />
     </div>
   );

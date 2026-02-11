@@ -3,8 +3,8 @@ import CardHero from "./CardHero";
 
 function Herosection() {
   return (
-    <div>
-      <div>
+    <div className="pt-120">
+      <div className="absolute right-14">
         <CardHero />
       </div>
     </div>
