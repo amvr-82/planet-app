@@ -3,32 +3,43 @@ export default function Header() {
     <div className="fixed items-center top-0 w-full h-20 z-50">
       {/* خود هدر*/}
       <div className="absolute inset-0 flex items-center  align-middle  px-6 z-10">
-        <div className=" flex gap-2 items-center top-10 px-2">
+        <div className=" flex gap-2 items-center mt-6 px-2">
           <img src="/assets\icon\logo.png" alt="" width={40} height={40} />
           <span className="text-[28px] text-white ">Planto</span>
         </div>
         <div className="">
-          <nav className=" flex absolute top-10 left-1/2 transform -translate-x-1/2 gap-10 font-linter text-gray-200 text-[24px] font-light">
-            <a href="home">Home</a>
-            <a href="type">Plants Type</a>
-            <a href="more">More</a>
-            <a href="contact">Contact</a>
+          <nav className=" flex absolute top-10 left-1/2 transform -translate-x-1/2 gap-10 font-linter text-gray-200 text-[24px] ">
+            <a className="hover:opacity-70 transition-opacity" href="home">
+              Home
+            </a>
+            <a className="hover:opacity-70 transition-opacity" href="type">
+              Plants Type
+            </a>
+            <a className="hover:opacity-70 transition-opacity" href="more">
+              More
+            </a>
+            <a className="hover:opacity-70 transition-opacity" href="contact">
+              Contact
+            </a>
           </nav>
         </div>
-        <div className=" absolute flex gap-10 right-0 px-15 top-10 ">
+        <div className=" absolute flex gap-12 right-0 px-15 top-10 ">
           <img
+            className="cursor-pointer hover:opacity-70 transition-opacity"
             src="./assets/icon/search.svg"
             alt="search-icon"
             width={26}
             height={26}
           />
           <img
+            className="cursor-pointer hover:opacity-70 transition-opacity"
             src="./assets/icon/bag.svg"
             alt="search-icon"
             width={26}
             height={26}
           />
           <img
+            className="cursor-pointer hover:opacity-70 transition-opacity"
             src="./assets/icon/menu.svg"
             alt="search-icon"
             width={26}
