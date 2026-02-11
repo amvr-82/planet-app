@@ -9,7 +9,7 @@ export default function Header() {
           <span className="text-[28px] text-white ">Planto</span>
         </div>
         {/* دیو منوعه */}
-        <div className="">
+        <div className="hidden lg:flex">
           <nav className=" flex absolute top-10 left-1/2 transform -translate-x-1/2 gap-10 font-linter text-gray-200 text-[24px] ">
             <a className="hover:opacity-70 transition-opacity" href="home">
               Home
