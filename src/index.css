@@ -24,10 +24,10 @@
   position: relative;
   width: 350px;
   height: 400px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(1, 1, 1, 0);
   border-radius: 60px;
-  backdrop-filter: blur(15px) saturate(120%) brightness(1.2);
-  clip-path: path("M 0 0 L 60 0 Q 200 20 290 0 L 350 0 L 350 400 L 0 400 Z");
+  backdrop-filter: blur(25px) saturate(120%) brightness(0.8);
+  clip-path: path("M 0 0 L 60 0 Q 200 30 290 0 L 350 0 L 350 400 L 0 400 Z");
   padding: 1px;
 }
 

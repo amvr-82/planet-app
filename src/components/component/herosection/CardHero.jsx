@@ -4,10 +4,10 @@ function CardHero() {
   return (
     <div className="relative w-125 h-125 flex items-center justify-center">
       {/* عکس گل*/}
-      <div className="absolute left-1/2 -top-20 -translate-x-1/2 z-60 pointer-events-none">
+      <div className="absolute left-1/2 -top-7 -translate-x-1/2 z-60 pointer-events-none">
         <img
           className="scale-130"
-          src="./assets/image/planet1.png"
+          src="./assets/image/plant1.png"
           alt="Planet"
           width={500}
           height={500}
@@ -21,9 +21,8 @@ function CardHero() {
             Trendy House Plant
           </span>
           <span className="text-white/75 text-[24px] ">Calathea plant</span>
-          {/* با استایل های تست شده از بالا */}
           <button
-            className="cursor-pointer text-white/75 text-[24px] border-2 border-white/50 rounded-[15px] w-40 h-12 
+            className="cursor-pointer text-white/75 text-[20px] border-2 border-white/50 rounded-2xl w-30 h-12 
                        hover:bg-white/20 active:bg-white/40 transition-colors duration-150 z-99"
           >
             Buy Now
