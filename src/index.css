@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "linter";
+  font-family: "Inter";
   src: url("./assets/font/linter.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
@@ -47,6 +47,5 @@
   mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
   mask-composite: exclude;
 }
