@@ -6,7 +6,7 @@ function CardHero() {
       {/* عکس گل*/}
       <div className="absolute left-1/2 -top-7 -translate-x-1/2 z-60 pointer-events-none">
         <img
-          className="scale-130"
+          className="scale-120"
           src="./assets/image/plant1.png"
           alt="Planet"
           width={500}

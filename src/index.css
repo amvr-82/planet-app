@@ -27,7 +27,7 @@
   background: rgba(1, 1, 1, 0);
   border-radius: 60px;
   backdrop-filter: blur(25px) saturate(120%) brightness(0.8);
-  clip-path: path("M 0 0 L 60 0 Q 200 30 290 0 L 350 0 L 350 400 L 0 400 Z");
+  clip-path: path("M 0 0 L 60 0 Q 200 40 290 0 L 350 0 L 350 400 L 0 400 Z");
   padding: 1px;
 }
 
