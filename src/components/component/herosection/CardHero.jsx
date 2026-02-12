@@ -32,7 +32,7 @@ function CardHero() {
   return (
     <div className="relative w-125 h-125 flex items-center justify-center">
       {/*  عکس  */}
-      <div className="absolute left-1/2 -top-10 -translate-x-1/2 z-50 pointer-events-none transition-all duration-500">
+      <div className="absolute left-1/2 -top-10 -translate-x-1/2 z-50 pointer-events-none transition-transform duration-1000 ">
         <img
           src={slides[index].image}
           alt={slides[index].title}
@@ -42,20 +42,17 @@ function CardHero() {
         />
       </div>
 
-      {/* کارت ثابت */}
-      <div className="card rounded-[60px] relative flex flex-col justify-end overflow-hidden">
+      {/* کارت ثابت که بلر شده*/}
+      <div className="card rounded-[77px] relative flex flex-col justify-end overflow-hidden">
         {/* اسلاید فقط برای متن و دکمه */}
         <div
-          className="absolute inset-0 flex transition-transform duration-500 ease-in-out"
+          className=" absolute inset-0 flex transition-transform ease-in-out duration-1000 "
           style={{
             transform: `translateX(-${index * 100}%)`,
           }}
         >
           {slides.map((item, i) => (
-            <div
-              key={i}
-              className="w-full flex-shrink-0 flex flex-col justify-end"
-            >
+            <div key={i} className="w-full shrink-0 flex flex-col justify-end ">
               <div className="flex flex-col gap-2 my-9 p-2 mx-10">
                 <span className="text-white/75 text-[17px] font-light">
                   {item.subtitle}
@@ -69,31 +66,31 @@ function CardHero() {
           ))}
         </div>
 
-        {/* دات */}
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-50">
+        {/*ها دات */}
+        <div className=" absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-50">
           {slides.map((_, i) => (
             <div
               key={i}
               onClick={() => setIndex(i)}
-              className={`w-2 h-2 rounded-full cursor-pointer ${
-                i === index ? "bg-white" : "bg-white/40"
+              className={`h-2 rounded-full cursor-pointer transition-all ease-in-out duration-500 z-50 ${
+                i === index ? "w-6 bg-white" : "w-2 bg-white/40"
               }`}
             />
           ))}
         </div>
 
-        {/* فلش‌ها */}
-        <div>
+        {/*  فلش های اسلاید  */}
+        <div className="">
           <button
             onClick={prev}
-            className="absolute left-4 top-1/2 -translate-y-1/2 text-white text-2xl z-50"
+            className=" cursor-pointer p-5 absolute left-0 top-1/2 -translate-y-1/2 text-white text-2xl z-50"
           >
             ‹
           </button>
 
           <button
             onClick={next}
-            className="absolute right-4 top-1/2 -translate-y-1/2 text-white text-2xl z-50"
+            className="cursor-pointer p-5 absolute right-0 top-1/2 -translate-y-1/2 text-white text-2xl z-50"
           >
             ›
           </button>
