@@ -20,7 +20,7 @@ function Herosection() {
         <div className="  flex mt-5 flex-row">
           <button
             className="cursor-pointer font-Inter text-white/75 text-[20px] border-2 border-white/50 rounded-xl w-40 h-12
-                       hover:bg-white/20 active:bg-white/40 transition-colors duration-150 z-99 "
+                       hover:bg-white/20 active:bg-white/40 transition-colors duration-150 "
           >
             Explore{" "}
           </button>
