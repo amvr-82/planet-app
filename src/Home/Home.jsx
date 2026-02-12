@@ -8,7 +8,7 @@ export default function Home() {
       <Header />
       <Herosection />
       <Call />
-      <div className="card1 rounded-[60px] w-2xl h-50"></div>
+      <div className="card1 rounded-[60px] w-[90%] h-80 ml-auto mr-auto mt-10"></div>
     </div>
   );
 }
