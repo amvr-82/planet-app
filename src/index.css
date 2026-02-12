@@ -25,7 +25,6 @@
   width: 350px;
   height: 400px;
   background: rgba(1, 1, 1, 0);
-  border-radius: 60px;
   backdrop-filter: blur(15px) saturate(120%) brightness(0.8);
   clip-path: path("M 0 0 L 60 0 Q 200 40 290 0 L 350 0 L 350 400 L 0 400 Z");
   padding: 1px;
@@ -43,7 +42,7 @@
     rgba(253, 253, 253, 0.34)
   );
   clip-path: inherit;
-  border-radius: 60px;
+  border-radius: inherit;
   mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
@@ -54,7 +53,6 @@
   position: relative;
 
   background: rgba(1, 1, 1, 0);
-  border-radius: 30px;
   backdrop-filter: blur(5px) saturate(120%) brightness(0.8);
   padding: 1px;
 }
@@ -62,6 +60,8 @@
 .card1::before {
   content: "";
   position: absolute;
+  border-radius: inherit; /*  مقدار radius رو از کارت1 می‌گیره */
+
   inset: 0;
   padding: 2px;
   background: linear-gradient(
@@ -71,7 +71,6 @@
     rgba(253, 253, 253, 0.34)
   );
   clip-path: inherit;
-  border-radius: 30px;
   mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);

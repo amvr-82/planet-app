@@ -15,7 +15,7 @@ function CardHero() {
       </div>
 
       {/*کارت اصلی */}
-      <div className=" card relative z-50 flex flex-col justify-end">
+      <div className=" card rounded-[60px] relative z-50 flex flex-col justify-end">
         {/* متن */}
         <div className=" flex flex-col gap-2 my-9 p-2 mx-10">
           <span className="text-white/75 text-[17px] font-light">

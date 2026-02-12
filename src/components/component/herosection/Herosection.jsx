@@ -42,7 +42,7 @@ function Herosection() {
         </div>
       </div>
       {/* دیو کارت نظرات */}
-      <div className="card1 h-50 w-80 ml-30 mt-20">
+      <div className="card1 rounded-[30px] h-50 w-80 ml-30 mt-20">
         {/* دیو پروفایل */}
         <div className=" flex mx-4 my-6">
           <div className="w-14 h-14 rounded-full overflow-hidden">
