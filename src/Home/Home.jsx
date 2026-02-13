@@ -1,6 +1,7 @@
 import Header from "../components/header/Header";
 import Herosection from "../components/component/herosection/Herosection";
 import Call from "../components/component/others/Call";
+import Footer from "../components/footer/Footer";
 
 export default function Home() {
   return (
@@ -63,6 +64,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
