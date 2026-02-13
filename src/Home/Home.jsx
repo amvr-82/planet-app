@@ -9,7 +9,7 @@ export default function Home() {
       <Herosection />
       <Call />
       {/* دیو کرات بزرگ زیر هدینگ */}
-      <div className="flex card1 rounded-[90px] w-[90%] h-80 ml-auto mr-auto mt-50 justify-around ">
+      <div className="flex card1 rounded-[90px] w-[90%] h-80 ml-auto mr-auto mt-80 justify-around ">
         {/* دیو عکس */}
         <div className="z-50 -mt-40 -ml-20  pointer-events-none">
           <img src="./public\assets\image\plant2.png" alt="" width={400} />
