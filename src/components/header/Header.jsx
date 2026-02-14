@@ -79,7 +79,7 @@ export default function Header() {
       {mobileOpen && (
         <div className="lg:hidden absolute top-20 inset-x-0 z-20 px-4 sm:px-6 pb-4">
           <div className="card1 rounded-[24px] p-4">
-            <nav className="flex flex-col gap-4 text-gray-200 text-[18px]">
+            <nav className="flex flex-col gap-4 text-gray-200 text-[18px] p-5">
               <a
                 className="hover:opacity-70 transition-opacity"
                 href="#home"

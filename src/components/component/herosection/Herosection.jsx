@@ -6,7 +6,7 @@ export default function Herosection() {
   return (
     <section
       id="home"
-      className="relative mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-10 pt-28 sm:pt-32 lg:pt-40"
+      className=" relative mx-auto w-full max-w-[1400px] px-4 sm:px-6 lg:px-10 pt-28 sm:pt-32 lg:pt-40"
     >
       {/* چیدمان دسکتاپ: متن چپ + کارت سمت راست | موبایل: ستونی */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">

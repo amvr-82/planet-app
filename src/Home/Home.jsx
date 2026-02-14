@@ -5,7 +5,7 @@ import Footer from "../components/footer/Footer";
 
 export default function Home() {
   return (
-    <div>
+    <div className="md:pt-50">
       <Header />
       <Herosection />
       <Call />
@@ -47,12 +47,7 @@ export default function Home() {
                 className="border-2 rounded-xl px-4 py-3 border-white/50 hover:bg-white/20 active:bg-white/40 transition-colors duration-150"
                 aria-label="Add to bag"
               >
-                <img
-                  src="/assets/icon/bag.svg"
-                  alt=""
-                  width={22}
-                  height={22}
-                />
+                <img src="/assets/icon/bag.svg" alt="" width={22} height={22} />
               </button>
             </div>
           </div>
@@ -96,12 +91,7 @@ export default function Home() {
                 className="border-2 rounded-xl px-4 py-3 border-white/50 hover:bg-white/20 active:bg-white/40 transition-colors duration-150"
                 aria-label="Add to bag"
               >
-                <img
-                  src="/assets/icon/bag.svg"
-                  alt=""
-                  width={22}
-                  height={22}
-                />
+                <img src="/assets/icon/bag.svg" alt="" width={22} height={22} />
               </button>
             </div>
           </div>
