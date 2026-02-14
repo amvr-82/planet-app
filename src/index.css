@@ -2,24 +2,36 @@
 
 @font-face {
   font-family: "Inter";
-  src: url("./assets/font/linter.ttf") format("truetype");
+  src: url("/assets/font/linter.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
-/* .card {
-  width: 300px;
-  height: 420px;
-  background: rgba(255, 255, 255, 0.05);
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-  border: 2px solid;
-  border-image: linear-gradient(90deg, #ff00cc, #3333ff, #00ffcc) 1;
-  border-radius: 60px;
+  body {
+    font-family:
+      Inter,
+      system-ui,
+      -apple-system,
+      Segoe UI,
+      Roboto,
+      Arial,
+      "Noto Sans",
+      "Apple Color Emoji",
+      "Segoe UI Emoji";
+    overflow-x: hidden;
+  }
 
-  backdrop-filter: blur(25px) saturate(120%) brightness(1.2);
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
 
-  clip-path: path("M 0 0 L 60 0 Q 150 20 230 0 L 300 0 L 300 420 L 0 420 Z");
-} */
 .card {
   position: relative;
   width: 350px;
@@ -51,7 +63,6 @@
 
 .card1 {
   position: relative;
-
   background: rgba(1, 1, 1, 0);
   backdrop-filter: blur(5px) saturate(120%) brightness(0.8);
   padding: 1px;
@@ -60,7 +71,8 @@
 .card1::before {
   content: "";
   position: absolute;
-  border-radius: inherit; /*  مقدار radius رو از کارت1 می‌گیره */
+  /* مقدار radius رو از .card1 می‌گیره */
+  border-radius: inherit;
   inset: 0;
   padding: 2px;
   background: linear-gradient(
@@ -74,4 +86,13 @@
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
   mask-composite: exclude;
+}
+
+/* CardHero: روی صفحه‌های کوچیک، کارت از عرض خارج نشه (shape ثابت می‌مونه) */
+@media (max-width: 420px) {
+  .card {
+    width: 300px;
+    height: 360px;
+    clip-path: path("M 0 0 L 50 0 Q 170 34 250 0 L 300 0 L 300 360 L 0 360 Z");
+  }
 }

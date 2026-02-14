@@ -1,57 +1,12 @@
-export default function Header() {
-  return (
-    <div className="fixed items-center top-0 w-full h-20 z-999">
-      {/* خود هدر*/}
-      <div className="absolute inset-0 flex items-center  align-middle  px-6 z-10">
-        {/* دیو لوگوعه */}
-        <div className=" flex gap-2 items-center mt-2 px-2">
-          <img src="/assets\icon\logo.png" alt="" width={40} height={40} />
-          <span className="text-[20px] text-white ">Planto</span>
-        </div>
-        {/* دیو منوعه */}
-        <div className="hidden lg:flex">
-          <nav className=" flex absolute top-7 left-1/2 transform -translate-x-1/2 gap-10 font-linter text-gray-200 text-[20px] ">
-            <a className="hover:opacity-70 transition-opacity" href="home">
-              Home
-            </a>
-            <a className="hover:opacity-70 transition-opacity" href="type">
-              Plants Type
-            </a>
-            <a className="hover:opacity-70 transition-opacity" href="more">
-              More
-            </a>
-            <a className="hover:opacity-70 transition-opacity" href="contact">
-              Contact
-            </a>
-          </nav>
-        </div>
-        {/* دیو ایکون های سمت راسته */}
-        <div className=" absolute flex gap-12 right-0 px-15 top-8 ">
-          <img
-            className="cursor-pointer hover:opacity-70 transition-opacity"
-            src="./assets/icon/search.svg"
-            alt="search-icon"
-            width={20}
-            height={20}
-          />
-          <img
-            className="cursor-pointer hover:opacity-70 transition-opacity"
-            src="./assets/icon/bag.svg"
-            alt="search-icon"
-            width={20}
-            height={20}
-          />
-          <img
-            className="cursor-pointer hover:opacity-70 transition-opacity"
-            src="./assets/icon/menu.svg"
-            alt="search-icon"
-            width={20}
-            height={20}
-          />
-        </div>
-      </div>
+import { useState } from "react";
 
-      {/* دیوی که بلر کرده اینه و اینجا {pointer-event} مهمه*/}
+export default function Header() {
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  const closeMobileMenu = () => setMobileOpen(false);
+
+  return (
+    <header className="fixed top-0 inset-x-0 h-20 z-[999]">
       <div
         className="bg-neutral-950/45 absolute inset-0 backdrop-blur-[100px] pointer-events-none"
         style={{
@@ -59,7 +14,104 @@ export default function Header() {
           WebkitMaskImage:
             "linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0))",
         }}
-      ></div>
-    </div>
+      />
+
+      {/* محتوای هدر */}
+      <div className="relative z-10 flex h-full items-center justify-between px-4 sm:px-6">
+        {/* لوگو */}
+        <div className="flex items-center gap-2">
+          <img
+            src="/assets/icon/logo.png"
+            alt="Planto logo"
+            width={40}
+            height={40}
+          />
+          <span className="text-[20px] text-white">Planto</span>
+        </div>
+
+        {/* منوی دسکتاپ */}
+        <nav className="hidden lg:flex gap-10 text-gray-200 text-[20px]">
+          <a className="hover:opacity-70 transition-opacity" href="#home">
+            Home
+          </a>
+          <a className="hover:opacity-70 transition-opacity" href="#type">
+            Plants Type
+          </a>
+          <a className="hover:opacity-70 transition-opacity" href="#more">
+            More
+          </a>
+          <a className="hover:opacity-70 transition-opacity" href="#contact">
+            Contact
+          </a>
+        </nav>
+
+        {/* آیکن‌های سمت راست */}
+        <div className="flex items-center gap-4 sm:gap-8">
+          <button
+            type="button"
+            className="cursor-pointer hover:opacity-70 transition-opacity"
+            aria-label="Search"
+          >
+            <img src="/assets/icon/search.svg" alt="" width={20} height={20} />
+          </button>
+
+          <button
+            type="button"
+            className="cursor-pointer hover:opacity-70 transition-opacity"
+            aria-label="Bag"
+          >
+            <img src="/assets/icon/bag.svg" alt="" width={20} height={20} />
+          </button>
+
+          {/* منوی موبایل */}
+          <button
+            type="button"
+            onClick={() => setMobileOpen((v) => !v)}
+            className="cursor-pointer hover:opacity-70 transition-opacity lg:hidden"
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
+            aria-expanded={mobileOpen}
+          >
+            <img src="/assets/icon/menu.svg" alt="" width={20} height={20} />
+          </button>
+        </div>
+      </div>
+
+      {mobileOpen && (
+        <div className="lg:hidden absolute top-20 inset-x-0 z-20 px-4 sm:px-6 pb-4">
+          <div className="card1 rounded-[24px] p-4">
+            <nav className="flex flex-col gap-4 text-gray-200 text-[18px]">
+              <a
+                className="hover:opacity-70 transition-opacity"
+                href="#home"
+                onClick={closeMobileMenu}
+              >
+                Home
+              </a>
+              <a
+                className="hover:opacity-70 transition-opacity"
+                href="#type"
+                onClick={closeMobileMenu}
+              >
+                Plants Type
+              </a>
+              <a
+                className="hover:opacity-70 transition-opacity"
+                href="#more"
+                onClick={closeMobileMenu}
+              >
+                More
+              </a>
+              <a
+                className="hover:opacity-70 transition-opacity"
+                href="#contact"
+                onClick={closeMobileMenu}
+              >
+                Contact
+              </a>
+            </nav>
+          </div>
+        </div>
+      )}
+    </header>
   );
 }
