@@ -80,34 +80,34 @@ export default function Header() {
         <div className="lg:hidden absolute top-20 inset-x-0 z-20 px-4 sm:px-6 pb-4">
           <div className="card1 rounded-[24px] p-4">
             <nav className="flex flex-col gap-4 text-gray-200 text-[18px] p-5">
-              <a
+              <Link
                 className="hover:opacity-70 transition-opacity"
                 href="#home"
                 onClick={closeMobileMenu}
               >
                 Home
-              </a>
-              <a
+              </Link>
+              <Link
                 className="hover:opacity-70 transition-opacity"
                 href="#type"
                 onClick={closeMobileMenu}
               >
                 Plants Type
-              </a>
-              <a
+              </Link>
+              <Link
                 className="hover:opacity-70 transition-opacity"
                 href="#more"
                 onClick={closeMobileMenu}
               >
                 More
-              </a>
-              <a
+              </Link>
+              <Link
                 className="hover:opacity-70 transition-opacity"
                 href="#contact"
                 onClick={closeMobileMenu}
               >
                 Contact
-              </a>
+              </Link>
             </nav>
           </div>
         </div>
