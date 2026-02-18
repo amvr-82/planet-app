@@ -1,12 +1,9 @@
-import Header from "../components/header/Header";
 import Herosection from "../components/component/herosection/Herosection";
 import Call from "../components/component/others/Call";
-import Footer from "../components/footer/Footer";
 
 export default function Home() {
   return (
     <div className="md:pt-50">
-      <Header />
       <Herosection />
       <Call />
 
@@ -97,8 +94,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 }
