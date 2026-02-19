@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 inset-x-0 h-20 z-[999]">
       <div
-        className="bg-neutral-950/45 absolute inset-0 backdrop-blur-[100px] pointer-events-none"
+        className="bg-gray-950/30 absolute inset-0 backdrop-blur-[5px] pointer-events-none"
         style={{
           maskImage: "linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0))",
           WebkitMaskImage:

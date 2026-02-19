@@ -76,6 +76,7 @@
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
   mask-composite: exclude;
+  z-index: -1;
 }
 
 /* CardHero: روی صفحه‌های کوچیک، کارت از عرض خارج نشه (shape ثابت می‌مونه) */
