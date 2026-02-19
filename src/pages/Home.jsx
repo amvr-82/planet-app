@@ -18,7 +18,7 @@ export default function Home() {
             <img
               src="/assets/image/plant2.png"
               alt="Plant"
-              className="w-[240px] sm:w-[320px] lg:w-[400px]"
+              className="w-[240px] sm:w-[320px] lg:w-[400px] "
               width={400}
             />
           </div>
@@ -62,7 +62,7 @@ export default function Home() {
             <img
               src="/assets/image/plant3.png"
               alt="Plant"
-              className="w-[240px] sm:w-[320px] lg:w-[400px]"
+              className="w-[240px] sm:w-[320px] lg:w-[400px] "
               width={400}
             />
           </div>
