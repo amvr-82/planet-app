@@ -3,7 +3,7 @@ import Call from "../components/component/others/Call";
 
 export default function Home() {
   return (
-    <div className="md:pt-50">
+    <div className="md:pt-50 ">
       <Herosection />
       <Call />
 

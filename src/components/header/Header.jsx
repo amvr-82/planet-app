@@ -31,7 +31,7 @@ export default function Header() {
 
         {/* منوی دسکتاپ */}
         <nav className="hidden lg:flex gap-10 text-gray-200 text-[20px]">
-          <a className="hover:opacity-70 transition-opacity" href="#home">
+          <a className="hover:opacity-70 transition-opacity" href="/">
             Home
           </a>
           <a className="hover:opacity-70 transition-opacity" href="#type">
@@ -82,7 +82,7 @@ export default function Header() {
             <nav className="flex flex-col gap-4 text-gray-200 text-[18px] p-5">
               <Link
                 className="hover:opacity-70 transition-opacity"
-                href="#home"
+                href="/"
                 onClick={closeMobileMenu}
               >
                 Home
