@@ -88,7 +88,7 @@ export default function Herosection() {
         </div>
 
         {/* کارت محصول (اسلایدر) */}
-        <div className="flex justify-center lg:justify-end">
+        <div className="flex justify-center lg:justify-end mt-10">
           <CardHero />
         </div>
       </div>

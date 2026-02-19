@@ -22,7 +22,8 @@ export default function CardHero() {
   ];
 
   const next = () => setIndex((prev) => (prev + 1) % slides.length);
-  const prev = () => setIndex((prev) => (prev - 1 + slides.length) % slides.length);
+  const prev = () =>
+    setIndex((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
     <div className="relative w-full max-w-[520px] h-[520px] sm:h-[560px] flex items-center justify-center">

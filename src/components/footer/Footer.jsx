@@ -15,7 +15,7 @@ export default function Footer() {
     <>
       <footer
         id="contact"
-        className="bg-[rgb(34,44,29)] w-full flex flex-col lg:flex-row rounded-[30px_30px_0px_0px] shadow-[2px_-20px_2px_rgb(59,77,50)] mt-20 px-6 sm:px-10 py-10 gap-10"
+        className="bg-[rgb(34,44,29)] w-full flex flex-col lg:flex-row rounded-[30px_30px_0px_0px] shadow-[2px_-20px_2px_rgb(59,77,50)] -mt-10 px-6 sm:px-10 py-10 gap-10"
       >
         {/* ستون راست (برند) */}
         <div className="text-white/70 w-full lg:w-[45%] lg:pl-5">
