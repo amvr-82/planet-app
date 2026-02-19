@@ -10,7 +10,7 @@
 
 @media (min-width: 640px) {
   .back-img {
-    background-size: contain;
+    background-size: cover;
     margin-top: -140px;
   }
 }
