@@ -6,11 +6,11 @@ import "./App.css";
 
 function layout() {
   return (
-    <React.Fragment classname="back-imgssss">
+    <>
       <Header />
       <Outlet />
       <Footer />
-    </React.Fragment>
+    </>
   );
 }
 
