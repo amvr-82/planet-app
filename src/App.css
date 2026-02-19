@@ -17,6 +17,7 @@
 
 @media (min-width: 1024px) {
   .back-img {
+    background-size: cover;
     margin-top: -250px;
   }
 }
