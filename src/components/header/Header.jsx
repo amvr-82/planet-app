@@ -1,10 +1,26 @@
-import { useState } from "react";
-import Link from "next/link";
+import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const menuRef = useRef(null);
 
   const closeMobileMenu = () => setMobileOpen(false);
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMobileOpen(false);
+      }
+    }
+
+    if (mobileOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [mobileOpen]);
 
   return (
     <header className="fixed top-0 inset-x-0 h-20 z-[999]">
@@ -67,7 +83,10 @@ export default function Header() {
           {/* منوی موبایل */}
           <button
             type="button"
-            onClick={() => setMobileOpen((v) => !v)}
+            onClick={(e) => {
+              e.stopPropagation();
+              setMobileOpen((v) => !v);
+            }}
             className="cursor-pointer hover:opacity-70 transition-opacity lg:hidden"
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileOpen}
@@ -78,7 +97,10 @@ export default function Header() {
       </div>
 
       {mobileOpen && (
-        <div className="lg:hidden absolute top-20 inset-x-0 z-20 px-4 sm:px-6 pb-4">
+        <div
+          ref={menuRef}
+          className="lg:hidden absolute top-20 inset-x-0 z-20 px-4 sm:px-6 pb-4"
+        >
           <div className="card1 rounded-[24px] p-4">
             <nav className="flex flex-col gap-4 text-gray-200 text-[18px] p-5">
               <Link
