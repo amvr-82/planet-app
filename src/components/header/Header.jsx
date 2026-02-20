@@ -51,7 +51,7 @@ export default function Header() {
           <a className="hover:opacity-70 transition-opacity" href="/">
             Home
           </a>
-          <a className="hover:opacity-70 transition-opacity" href="#type">
+          <a className="hover:opacity-70 transition-opacity" href="PalntType">
             Plants Type
           </a>
           <a className="hover:opacity-70 transition-opacity" href="#more">
@@ -112,7 +112,7 @@ export default function Header() {
               </Link>
               <Link
                 className="hover:opacity-70 transition-opacity"
-                href="#type"
+                href="PalntType"
                 onClick={closeMobileMenu}
               >
                 Plants Type
