@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const menuRef = useRef(null);
-
   const closeMobileMenu = () => setMobileOpen(false);
+
   useEffect(() => {
     function handleClickOutside(event) {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
