@@ -26,7 +26,7 @@ function PlantType() {
   ];
   return (
     <div className="bg-[#1B2316] h-600">
-      <div className="card1 absolute  top-20 mx-20 h-200 rounded-[30px] overflow-hidden">
+      <div className="card1 absolute  top-20 mx-20 h- rounded-[30px] overflow-hidden">
         {/* اسلاید فقط برای متن و دکمه */}
         <div
           className=" absolute inset-0 flex transition-transform ease-in-out duration-1000"
@@ -55,25 +55,25 @@ function PlantType() {
               </div>
             </div>
           ))}
-          <div className="bg-red-500">
-            <button
-              type="button"
-              onClick={prev}
-              className=" cursor-pointer p-5 absolute left-0 top-1/2 -translate-y-1/2 text-white text-2xl z-50"
-              aria-label="Previous slide"
-            >
-              ‹
-            </button>
+        </div>
+        <div className="bg-red-500">
+          <button
+            type="button"
+            onClick={prev}
+            className=" cursor-pointer p-5 absolute left-0 top-1/2 -translate-y-1/2 text-white text-2xl z-50"
+            aria-label="Previous slide"
+          >
+            ‹
+          </button>
 
-            <button
-              type="button"
-              onClick={next}
-              className="cursor-pointer p-5 absolute right-0 top-1/2 -translate-y-1/2 text-white text-2xl z-50"
-              aria-label="Next slide"
-            >
-              ›
-            </button>
-          </div>
+          <button
+            type="button"
+            onClick={next}
+            className="cursor-pointer p-5 absolute right-0 top-1/2 -translate-y-1/2 text-white text-2xl z-50"
+            aria-label="Next slide"
+          >
+            ›
+          </button>
         </div>
       </div>
     </div>
