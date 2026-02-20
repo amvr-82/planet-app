@@ -1,9 +1,11 @@
 import React from "react";
 import { useState } from "react";
+
 function PlantType() {
   const [index, setIndex] = useState(0);
-  // const next = () => setIndex((prev) => (prev + 1) % slides.length);
-  // const prev = () =>
+  const next = () => setIndex((prev) => (prev + 1) % slides1.length);
+  const prev = () =>
+    setIndex((prev) => (prev - 1 + slides1.length) % slides1.length);
 
   const slides1 = [
     {
@@ -49,9 +51,29 @@ function PlantType() {
                 >
                   Buy Now
                 </button>
+                ;
               </div>
             </div>
           ))}
+          <div className="bg-red-500">
+            <button
+              type="button"
+              onClick={prev}
+              className=" cursor-pointer p-5 absolute left-0 top-1/2 -translate-y-1/2 text-white text-2xl z-50"
+              aria-label="Previous slide"
+            >
+              ‹
+            </button>
+
+            <button
+              type="button"
+              onClick={next}
+              className="cursor-pointer p-5 absolute right-0 top-1/2 -translate-y-1/2 text-white text-2xl z-50"
+              aria-label="Next slide"
+            >
+              ›
+            </button>
+          </div>
         </div>
       </div>
     </div>
