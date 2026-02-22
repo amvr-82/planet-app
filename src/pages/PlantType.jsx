@@ -27,7 +27,7 @@ function PlantType() {
   return (
     // این دیو اصلیه
     <div className="bg-[#1B2316] h-600">
-      <div className="card1 absolute flex flex-row  top-20 mx-20 h-150 rounded-[30px] overflow-hidden">
+      <div className="card1 absolute flex flex-row  top-20 mx-20 h-200 rounded-[60px] overflow-hidden p-10 ">
         {/* اسلاید فقط برای متن و دکمه */}
         <div
           className="  absolute inset-0 flex  transition-transform ease-in-out duration-1000"
@@ -36,10 +36,15 @@ function PlantType() {
           {slides1.map((item) => (
             <div
               key={item.title}
-              className=" flex flex-row w-full shrink-0  justify-end"
+              className=" flex flex-row w-full shrink-0  justify-start   "
             >
               <div>
-                <img src={item.image} alt="" />
+                <img
+                  src={item.image}
+                  alt="plant-app"
+                  width={500}
+                  height={500}
+                />
               </div>
               <div className="  flex flex-col gap-2 my-9 p-2 mx-10">
                 <span className="text-white/75 text-[17px] font-light">
