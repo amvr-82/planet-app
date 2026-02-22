@@ -3,14 +3,14 @@ import Call from "../components/component/others/Call";
 
 export default function Home() {
   return (
-    <div className="md:pt-50 pb-20 back-img ">
+    <div className="md:pt-100 pb-100 back-img ">
       <Herosection />
       <Call />
 
       {/* کارت بزرگ 1 زیر Hero */}
       <div
         id="type"
-        className="card1 rounded-[60px] sm:rounded-[90px] w-[90%] max-w-[1200px] mx-auto mt-24 lg:mt-80"
+        className=" card1  rounded-[60px] sm:rounded-[70px] w-[90%] max-w-[1200px] mx-auto mt-24 lg:mt-80"
       >
         <div className="flex flex-col lg:flex-row items-center justify-around gap-10 px-6 sm:px-10 py-12 lg:py-0 lg:h-80">
           {/* عکس (روی موبایل وسط میاد، روی دسکتاپ همون حالت قبلی رو حفظ می‌کنه) */}
@@ -54,7 +54,7 @@ export default function Home() {
       {/* کارت بزرگ 2 زیر کارت اول */}
       <div
         id="more"
-        className="card1 rounded-[60px] sm:rounded-[90px] w-[90%] max-w-[1200px] mx-auto mt-14 lg:mt-52"
+        className="card1 rounded-[60px] sm:rounded-[90px] w-[90%] max-w-[1200px] mx-auto mt-14  lg:mt-52"
       >
         <div className="flex flex-col lg:flex-row-reverse items-center justify-around gap-10 px-6 sm:px-10 py-12 lg:py-0 lg:h-80">
           {/* عکس */}

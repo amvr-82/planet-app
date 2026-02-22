@@ -55,7 +55,7 @@
   position: relative;
   background: rgba(1, 1, 1, 0);
   backdrop-filter: blur(5px) saturate(120%) brightness(0.8);
-  padding: 1px;
+  padding-left: 30px;
 }
 
 .card1::before {
