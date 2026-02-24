@@ -38,6 +38,7 @@ function PlantType() {
               key={item.title}
               className=" flex flex-row w-full shrink-0  justify-start   "
             >
+              {/* عکس سمت چپ */}
               <div>
                 <img
                   src={item.image}
@@ -46,6 +47,7 @@ function PlantType() {
                   height={400}
                 />
               </div>
+              {/* متن و دکمه سمت راست */}
               <div className="  flex flex-col gap-2 my-9 p-2 mx-10">
                 <span className="text-white/75 text-[17px] font-light">
                   {item.subtitle}
@@ -57,29 +59,30 @@ function PlantType() {
                 >
                   Buy Now
                 </button>
-                ;
               </div>
             </div>
           ))}
         </div>
-        <div className="relative w-full h-full">
-          <button
-            type="button"
-            onClick={prev}
-            className=" rounded-[100%]  cursor-pointer p-5 absolute left-0 top-1/2 -translate-y-1/2 text-white text-shadow-gray-950  text-2xl z-50"
-            aria-label="Previous slide"
-          >
-            ‹
-          </button>
+        <div className="absolute inset-0 flex items-center justify-center overflow-hidden ">
+          <div className=" relative w-[20%] h-[20%]">
+            <button
+              type="button"
+              onClick={prev}
+              className=" rounded-[100%]  cursor-pointer p-5 absolute left-0 top-1/2 -translate-y-1/2 text-white text-shadow-gray-950  text-2xl z-50"
+              aria-label="Previous slide"
+            >
+              ‹
+            </button>
 
-          <button
-            type="button"
-            onClick={next}
-            className=" rounded-[100%] cursor-pointer p-5 absolute right-0 top-1/2 -translate-y-1/2 text-white text-2xl z-50"
-            aria-label="Next slide"
-          >
-            ›
-          </button>
+            <button
+              type="button"
+              onClick={next}
+              className=" rounded-[100%] cursor-pointer p-5 absolute right-0 top-1/2 -translate-y-1/2 text-white text-2xl z-50"
+              aria-label="Next slide"
+            >
+              ›
+            </button>
+          </div>
         </div>
       </div>
     </div>
