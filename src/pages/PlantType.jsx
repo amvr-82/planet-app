@@ -27,7 +27,7 @@ function PlantType() {
   return (
     // این دیو اصلیه
     <div className="bg-[#1B2316] h-600">
-      <div className="card1 absolute flex flex-row  top-20 mx-20 h-200 rounded-[60px] overflow-hidden p-10 ">
+      <div className="card1 absolute flex flex-row  top-20 mx-20 h-110 rounded-[60px] overflow-hidden p-10 ">
         {/* اسلاید فقط برای متن و دکمه */}
         <div
           className="  absolute inset-0 flex  transition-transform ease-in-out duration-1000"
@@ -42,8 +42,8 @@ function PlantType() {
                 <img
                   src={item.image}
                   alt="plant-app"
-                  width={500}
-                  height={500}
+                  width={400}
+                  height={400}
                 />
               </div>
               <div className="  flex flex-col gap-2 my-9 p-2 mx-10">
@@ -66,7 +66,7 @@ function PlantType() {
           <button
             type="button"
             onClick={prev}
-            className=" cursor-pointer p-5 absolute left-0 top-1/2 -translate-y-1/2 text-white text-2xl z-50"
+            className=" rounded-[100%]  cursor-pointer p-5 absolute left-0 top-1/2 -translate-y-1/2 text-white text-shadow-gray-950  text-2xl z-50"
             aria-label="Previous slide"
           >
             ‹
@@ -75,7 +75,7 @@ function PlantType() {
           <button
             type="button"
             onClick={next}
-            className="cursor-pointer p-5 absolute right-0 top-1/2 -translate-y-1/2 text-white text-2xl z-50"
+            className=" rounded-[100%] cursor-pointer p-5 absolute right-0 top-1/2 -translate-y-1/2 text-white text-2xl z-50"
             aria-label="Next slide"
           >
             ›
