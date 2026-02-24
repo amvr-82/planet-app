@@ -53,16 +53,11 @@ function PlantType() {
                   {item.subtitle}
                 </span>
                 <span className="text-white/75 text-[24px]">{item.title}</span>
-                <button
-                  type="button"
-                  className="cursor-pointer text-white/75 text-[18px] sm:text-[20px] border-2 border-white/50 rounded-xl w-40 h-12 hover:bg-white/20 active:bg-white/40 transition-colors duration-150"
-                >
-                  Buy Now
-                </button>
               </div>
             </div>
           ))}
         </div>
+        {/* دیو دکمه ها که روی اسلاید قرار میگیره */}
         <div className="absolute inset-0 flex items-center justify-center overflow-hidden ">
           <div className=" relative w-[20%] h-[20%]">
             <button
