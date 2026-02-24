@@ -30,7 +30,7 @@ function PlantType() {
       <div className="card1 absolute flex flex-row  top-20 mx-20 h-110 rounded-[60px] overflow-hidden p-10 ">
         {/* اسلاید فقط برای متن و دکمه */}
         <div
-          className="  absolute inset-0 flex  transition-transform ease-in-out duration-1000"
+          className=" absolute inset-0 flex  transition-transform ease-in-out duration-1000"
           style={{ transform: `translateX(-${index * 100}%)` }}
         >
           {slides1.map((item) => (
@@ -62,7 +62,7 @@ function PlantType() {
             </div>
           ))}
         </div>
-        <div className="bg-red-500">
+        <div className="relative w-full h-full">
           <button
             type="button"
             onClick={prev}
