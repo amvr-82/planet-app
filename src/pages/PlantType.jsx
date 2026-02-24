@@ -3,9 +3,9 @@ import { useState } from "react";
 
 function PlantType() {
   const [index, setIndex] = useState(0);
-  const next = () => setIndex((prev) => (prev + 1) % slides1.length);
+  const next = () => setIndex((ghabli) => (ghabli + 1) % slides1.length);
   const prev = () =>
-    setIndex((prev) => (prev - 1 + slides1.length) % slides1.length);
+    setIndex((ghabli) => (ghabli - 1 + slides1.length) % slides1.length);
 
   const slides1 = [
     {
@@ -27,7 +27,7 @@ function PlantType() {
   return (
     // این دیو اصلیه
     <div className="bg-[#1B2316] h-600">
-      <div className="card1 absolute flex flex-row  top-20 mx-20 h-110 rounded-[60px] overflow-hidden p-10 ">
+      <div className="card1 absolute flex flex-row  top-20 mx-20 h-110 rounded-[60px] overflow-hidden p-10  ">
         {/* اسلاید فقط برای متن و دکمه */}
         <div
           className=" absolute inset-0 flex  transition-transform ease-in-out duration-1000"
@@ -58,21 +58,30 @@ function PlantType() {
           ))}
         </div>
         {/* دیو دکمه ها که روی اسلاید قرار میگیره */}
-        <div className="absolute inset-0 flex items-center justify-center overflow-hidden ">
-          <div className=" relative w-[20%] h-[20%]">
+        <div className=" absolute right-0 top-10 inset-0 flex w-20% h-20% items-end justify-end p-10">
+          <button
+            type="button"
+            className="cursor-pointer text-white/75 text-[18px] sm:text-[20px] border-2 border-white/50 rounded-xl w-40 h-12 hover:bg-white/20 active:bg-white/40 transition-colors duration-150"
+          >
+            Buy Now
+          </button>
+          <div className=" relative flex flex-row w-60 h-15 ">
             <button
               type="button"
               onClick={prev}
-              className=" rounded-[100%]  cursor-pointer p-5 absolute left-0 top-1/2 -translate-y-1/2 text-white text-shadow-gray-950  text-2xl z-50"
+              className=" rounded-[100%]  cursor-pointer px-5  text-white text-shadow-gray-950  text-5xl z-50"
               aria-label="Previous slide"
             >
               ‹
             </button>
-
+            <span className=" text-white text-lg font-semibold mx-2 py-5">
+              {String(index + 1).padStart(2, "0")}/
+              {String(slides1.length).padStart(2, "0")}
+            </span>
             <button
               type="button"
               onClick={next}
-              className=" rounded-[100%] cursor-pointer p-5 absolute right-0 top-1/2 -translate-y-1/2 text-white text-2xl z-50"
+              className=" rounded-[100%] cursor-pointer px-5  text-white text-5xl z-50"
               aria-label="Next slide"
             >
               ›
