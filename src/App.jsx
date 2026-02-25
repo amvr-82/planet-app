@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout.jsx";
 import Home from "./pages/Home.jsx";
 import PlantType from "./pages/PlantType.jsx";
+import Test from "./pages/Test.jsx";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="PalntType" element={<PlantType />} />
+          <Route path="Test" element={<Test />} />
         </Route>
       </Routes>
     </BrowserRouter>
