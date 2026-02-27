@@ -1,12 +1,11 @@
 import React from "react";
 import { useState } from "react";
 
-function PlantType() {
+function CardPlantType() {
   const [index, setIndex] = useState(0);
   const next = () => setIndex((ghabli) => (ghabli + 1) % slides1.length);
   const prev = () =>
     setIndex((ghabli) => (ghabli - 1 + slides1.length) % slides1.length);
-
   const slides1 = [
     {
       title: "We Have Small And Best O1 Plants Collection’s",
@@ -25,8 +24,7 @@ function PlantType() {
     },
   ];
   return (
-    // این دیو اصلیه
-    <div className="bg-[#1B2316] h-600">
+    <div>
       <div className="card1 absolute flex flex-row  top-20 mx-20 h-110 rounded-[60px] overflow-hidden p-10  ">
         {/* اسلاید فقط برای متن و دکمه */}
         <div
@@ -93,4 +91,4 @@ function PlantType() {
   );
 }
 
-export default PlantType;
+export default CardPlantType;
