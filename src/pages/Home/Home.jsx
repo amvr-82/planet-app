@@ -1,5 +1,5 @@
-import Herosection from "./components/Herosection";
-import Call from "../../components/component/Call";
+import Herosection from "./components/Herosection.jsx";
+import Call from "../../components/component/Call.jsx";
 
 export default function Home() {
   return (

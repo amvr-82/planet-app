@@ -1,4 +1,4 @@
-import CardHero from "./CardHero";
+import CardHero from "./CardHero.jsx";
 
 export default function Herosection() {
   const rating = 3;

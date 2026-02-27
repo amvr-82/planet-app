@@ -1,5 +1,5 @@
 import React from "react";
-import CardPlantType from "./Components/CardPlantType";
+import CardPlantType from "./Components/CardPlantType.jsx";
 
 function PlantType() {
   return (
