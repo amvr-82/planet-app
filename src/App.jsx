@@ -10,6 +10,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="PalntType" element={<PlantType />} />
+          <Route path="Test" element={<Test />} />
         </Route>
       </Routes>
     </BrowserRouter>
